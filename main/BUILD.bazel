@@ -2,6 +2,6 @@ cc_binary(
     name = "hello-world",
     srcs = ["hello-world.cc"],
     deps = [
-        "//lib:c-jump",
+        "//lib:jmp",
     ],
 )

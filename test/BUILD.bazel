@@ -1,7 +1,9 @@
 cc_test(
-    name = "test-hello",
-    srcs = glob(["**/*.cc"]),
-    deps = ["//lib:c-jump",
-            "@com_google_googletest//:gtest_main"],
+    name = "test_algorithm",
     size = "small",
+    srcs = glob(["**/*.cc"]),
+    deps = [
+        "//lib:jmp",
+        "@com_google_googletest//:gtest_main",
+    ],
 )
