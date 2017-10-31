@@ -7,6 +7,8 @@ void hello()
 
 int testFunc()
 {
-  return 42;
+  // use generic lambda as c++14 feature
+  auto f = [](auto a, auto b){ return a + b;};
+  return f(30, 12);
 }
 
